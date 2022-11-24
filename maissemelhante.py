@@ -30,9 +30,17 @@ for fn in img_names:
         #del (hashes[i])
     i += 1
 
-maior
-if hash_modelo
-print("Maior Similaridade é: ", max(hashes))
+mais_similar = 0
+arquivo_similar = None
+print("tamanho lista hash = ", len(hashes))
+for hs in hashes:
+    if hashes[j] > mais_similar:
+        mais_similar = hashes[j]
+        arquivo_similar = img_names[j]
+        j += 1
+print("")
+print("________________________")
+print("A Imagem mais similar é a ",arquivo_similar, "com ", mais_similar, "% de similaridade.")
 
 
 
