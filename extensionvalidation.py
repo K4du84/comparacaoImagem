@@ -4,7 +4,6 @@ import pathlib
 from glob import glob
 import os
 
-
 i = 0
 img_names = glob(os.path.join("C:\\ImageBD", '*.*'))
 for fn in img_names:
