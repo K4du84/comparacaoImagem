@@ -1,6 +1,11 @@
 import pathlib
 from glob import glob
 import os
+import hashlib
+
+
+
+
 
 i = 0
 img_names = glob(os.path.join(os.getcwd(), '*.*'))
@@ -9,7 +14,7 @@ for fn in img_names:
     print("Arquivo ", i + 1, "- ", img_names[i])
     print("File Extension: ", file_extension)
 
-    if file_extension == ".jpg" or ".jpeg":
+    if (file_extension == ".jpg") or (file_extension == ".jpeg"):
         print("Arquivo válido!")
     else:
         print("Extensão inválida, por favor incluia arquivo com extensão .jpg")

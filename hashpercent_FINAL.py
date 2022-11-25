@@ -12,7 +12,7 @@ tamanho = {}
 img_names = glob(os.path.join(os.getcwd(),'*.jpg'))
 for fn in img_names:
     print("Arquivo ", i + 1, " - ", img_names[i])
-    hashes[i] = imagehash.phash(Image.open(img_names[i]))
+    hashes[i] = imagehash.whash(Image.open(img_names[i]))
     print("Wash Hash - ", hashes[i])
     tamanho[i] = len(hashes[i])
     print(tamanho[i])

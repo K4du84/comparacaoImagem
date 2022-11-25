@@ -10,7 +10,7 @@ i = 0
 hashes = {}
 
 # DEFINIÇÃO DAS INFORMAÇÕES DA IMAGEM MODELO, QUE QUEREMOS COMPARAR COM O BANCO DE DADOS.
-modelo = "C:\\ImageBD\\unqlo\\WHITE-HORSE.jpg"
+modelo = "C:\\ImageBD\\unqlo\\BLACK_HORSE.jpg"
 hash_modelo = imagehash.whash(Image.open(modelo))
 tamanho = len(hash_modelo)
 
@@ -31,7 +31,7 @@ j = 0
 mais_similar = 0
 arquivo_similar = None
 
-print("tamanho lista hash = ", len(hashes))
+#print("tamanho lista hash = ", len(hashes))
 for hs in hashes:
     if hashes[j] > mais_similar:
         mais_similar = hashes[j]
@@ -40,7 +40,7 @@ for hs in hashes:
 print("")
 print("________________________")
 print("")
-print("A Imagem mais similar é a",arquivo_similar, ",com ", mais_similar, "% de similaridade.")
+print("A Imagem mais similar é a", arquivo_similar, ",com ", mais_similar, "% de similaridade.")
 print("")
 print("________________________")
 print("")
